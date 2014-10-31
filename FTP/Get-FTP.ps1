@@ -10,3 +10,6 @@ $cred = New-Object System.Management.Automation.PSCredential -ArgumentList @($us
 set-ftpconnection -server $server -Credentials $cred -UseBinary -UsePassive
 
 $Files = get-ftpchilditem -path $URL
+
+#Teller filer
+$files.count
